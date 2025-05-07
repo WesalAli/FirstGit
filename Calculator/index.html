@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Simple Calculator</title>
+  <script defer src="script.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 flex items-center justify-center h-screen">
+  <div class="bg-white p-8 rounded shadow-md w-96 text-center">
+    <h1 class="text-2xl font-bold mb-4">Simple Calculator</h1>
+    <input id="num1" type="number" placeholder="Enter first number" class="mb-2 w-full p-2 border rounded" />
+    <input id="num2" type="number" placeholder="Enter second number" class="mb-4 w-full p-2 border rounded" />
+    
+    <div class="grid grid-cols-4 gap-2 mb-4">
+      <button class="bg-blue-500 text-white p-2 rounded hover:bg-blue-600" onclick="calculate('+')">+</button>
+      <button class="bg-blue-500 text-white p-2 rounded hover:bg-blue-600" onclick="calculate('-')">-</button>
+      <button class="bg-blue-500 text-white p-2 rounded hover:bg-blue-600" onclick="calculate('*')">*</button>
+      <button class="bg-blue-500 text-white p-2 rounded hover:bg-blue-600" onclick="calculate('/')">÷</button>
+    </div>
+
+    <div id="result" class="text-xl font-semibold text-gray-700"></div>
+  </div>
+</body>
+</html>
