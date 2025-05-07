@@ -1,23 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD
-    <title>Full Stack Development</title>
+    <title>Page Using Tailwind</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        /* Custom Styles */
+        .btn-primary {
+            background-color: #4F46E5;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: #3730A3;
+        }
+
+        .card {
+            border: 1px solid #E5E7EB;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
 </head>
-<body>
-    <h1>Hi There</h1>
-    <h2>Hi There</h2>
-    <h3>Hi There</h3>
-    <h4>Hi There</h4>
-    <h5>Hi There</h5>
-    <h6>Hi There</h6>
-=======
-    <title>First Git</title>
-</head>
-<body>
-    
->>>>>>> d85d3b2493be27fbbadd0aea3772e06acc111aa9
+
+<body class="bg-gray-50">
+
+    <!-- Navigation Bar -->
+    <header class="bg-white shadow-lg sticky top-0 z-50">
+        <nav class="max-w-screen-xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="#" class="text-2xl font-bold text-indigo-600">Brand</a>
+            <div class="space-x-8 hidden md:flex">
+                <a href="#" class="text-lg font-semibold text-gray-700 hover:text-indigo-600">Home</a>
+                <a href="#features" class="text-lg font-semibold text-gray-700 hover:text-indigo-600">Features</a>
+                <a href="#contact" class="text-lg font-semibold text-gray-700 hover:text-indigo-600">Contact</a>
+            </div>
+            <div class="space-x-6">
+                <a href="#login" class="text-lg font-semibold text-gray-700 hover:text-indigo-600">Login</a>
+                <a href="#signup" class="text-lg font-semibold text-white bg-indigo-600 px-6 py-2 rounded-full hover:bg-indigo-500">Sign Up</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-indigo-600 text-white text-center py-24">
+        <h1 class="text-5xl font-semibold mb-4">Build Your Dream Website Today</h1>
+        <p class="text-xl mb-8">Create beautiful, responsive websites with no coding experience required.</p>
+        <a href="#get-started" class="bg-indigo-600 text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-indigo-500">Get Started</a>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-gray-50">
+        <div class="max-w-screen-xl mx-auto text-center">
+            <h2 class="text-3xl font-semibold mb-12">Our Key Features</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+                <div class="card">
+                    <h3 class="text-2xl font-semibold mb-4">Responsive Design</h3>
+                    <p>Build websites that automatically adjust to any screen size or device.</p>
+                </div>
+                <div class="card">
+                    <h3 class="text-2xl font-semibold mb-4">Customizable Templates</h3>
+                    <p>Choose from a wide range of templates or start from scratch.</p>
+                </div>
+                <div class="card">
+                    <h3 class="text-2xl font-semibold mb-4">Drag & Drop Editor</h3>
+                    <p>Design your website with ease using the intuitive drag and drop interface.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="py-20 bg-white text-center">
+        <h2 class="text-3xl font-semibold mb-8">Ready to Start?</h2>
+        <p class="text-lg mb-6">Join thousands of people using our platform to create stunning websites.</p>
+        <a href="#signup" class="bg-indigo-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-indigo-500">Start Free Trial</a>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-100 text-center">
+        <h2 class="text-3xl font-semibold mb-8">Contact Us</h2>
+        <p class="text-lg mb-6">Have any questions? Reach out to us and we'll get back to you as soon as possible.</p>
+        <form action="#" method="POST" class="max-w-md mx-auto">
+            <input type="text" class="w-full p-4 mb-4 border border-gray-300 rounded-lg" placeholder="Your Name" required>
+            <input type="email" class="w-full p-4 mb-4 border border-gray-300 rounded-lg" placeholder="Your Email" required>
+            <textarea class="w-full p-4 mb-4 border border-gray-300 rounded-lg" placeholder="Your Message" required></textarea>
+            <button type="submit" class="bg-indigo-600 text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-indigo-500">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-indigo-600 text-white text-center py-6">
+        <p>&copy; 2025 Malik. All Rights Reserved.</p>
+    </footer>
+
 </body>
+
 </html>
