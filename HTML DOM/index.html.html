@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DOM Manipulation Practice</title>
+  <style>
+    #box {
+      width: 200px;
+      height: 100px;
+      background-color: lightblue;
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 id="heading">Hello Wesal!</h1>
+  <div id="box"></div>
+  <button onclick="changeText()">Change Text</button>
+  <button onclick="changeColor()">Change Color</button>
+  <button onclick="addItem()">Add Item</button>
+  <ul id="list"></ul>
+
+  <script>
+    function changeText() {
+      document.getElementById('heading').textContent = 'Text Changed!';
+
+    }
+    function changeColor() {
+      document.getElementById('box').style.backgroundColor = 'salmon';
+    }
+
+    function addItem() {
+      const li = document.createElement('li');
+      li.textContent = 'New List Item';
+      document.getElementById('list').appendChild(li);
+    }
+  </script>
+
+</body>
+</html>
